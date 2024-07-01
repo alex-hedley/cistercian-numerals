@@ -11,6 +11,8 @@
 
 - [site](https://alex-hedley.github.io/cistercian-numerals/)
 
+![Cistercian Numerals](images/Cistercian_numerals.png "Cistercian Numerals")
+
 ## Links
 
 - https://en.wikipedia.org/wiki/Cistercian_numerals
