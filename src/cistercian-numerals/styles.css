@@ -1,0 +1,52 @@
+body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.4;
+  }
+  
+  h1 {
+    line-height: 1;
+    margin: 0 0 1em 0;
+  }
+  
+  body > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em 0 0 0;
+    max-width: 50em;
+  }
+  
+  body > div > div {
+    flex: 0 1 15em;
+    margin: 0 0 2em 0;
+  }
+  
+  body > div > div:first-child {
+    padding: .5em 1em;
+    border: .3em double currentColor;
+  }
+  
+  label, button {
+    display: block;
+    margin: .25em 0;
+  }
+  
+  button,
+  input {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+  }
+  
+  button {
+    margin: .5em 0 1.5em 0;
+  }
+  
+  input {
+    width: 4em;
+  }
+  
+  #CistercianGlyph {
+    width: 15em;
+  }
