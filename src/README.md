@@ -22,9 +22,17 @@
 - https://codepen.io/aardrian/pen/eYBxMJw
 - https://cdpn.io/aardrian/debug/eYBxMJw
 
-## Cistercian Numerals generator
+## Cistercian Numerals generator
 
 - [index.html](codepo8/index.html)
 
 - https://github.com/codepo8/cistercian/
 - https://codepo8.github.io/cistercian/
+
+## Cistercian Numeral Font
+
+- [index.html](cistercian-font/index.html)
+
+- https://github.com/bobbiec/cistercian-font
+- https://bobbiec.github.io/cistercian-font.html
+- https://digitalseams.com/blog/making-a-font-with-9999-ligatures-to-display-thirteenth-century-monk-numerals
