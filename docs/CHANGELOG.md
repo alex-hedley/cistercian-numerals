@@ -14,3 +14,9 @@
 ### Added
 
 - Cistercian Numerals generator
+
+## [0.0.3] - 2026-02-10
+
+### Added
+
+- Cistercian Numeral Font

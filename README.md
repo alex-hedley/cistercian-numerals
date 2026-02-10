@@ -18,6 +18,9 @@
 - https://en.wikipedia.org/wiki/Cistercian_numerals
   - https://www.unicode.org/L2/L2020/20290-cistercian-digits.pdf
 - https://adrianroselli.com/2021/02/cistercian-svg.html
+- https://codepo8.github.io/cistercian/
+- https://bobbiec.github.io/cistercian-font.html
+- https://digitalseams.com/blog/making-a-font-with-9999-ligatures-to-display-thirteenth-century-monk-numerals
 
 ### Fonts
 
