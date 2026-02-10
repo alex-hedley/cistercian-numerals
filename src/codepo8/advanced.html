@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert to Cistercian</title>
+</head>
+<body>
+    <div id="mycanvas"></div>
+    <script src="cistercian.js"></script>
+    <script>
+        const converter = new Cistercian();
+        converter.rendernumber(1312);
+        const myConverter = new Cistercian();
+        myConverter.configure({
+            renderer: 'svg',
+            canvas: {
+                width: 400
+            },
+            stroke: {
+                colour: 'peachpuff',
+                width: 10
+            },
+            addtext: false,
+            addinteraction: false,
+            outputcontainer: document.getElementById('mycanvas')
+        });
+        myConverter.rendernumber(1312);
+
+</script>
+<footer>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, using <a href="https://en.wikipedia.org/wiki/Cistercian_numerals">Cistercian numerals</a> and <a href="https://github.com/codepo8/cistercian">Cistercian.js</a>.</footer>
+</body>
+</html>

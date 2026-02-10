@@ -8,3 +8,9 @@
 ### Added
 
 - Initial Setup
+
+## [0.0.2] - 2026-02-10
+
+### Added
+
+- Cistercian Numerals generator
