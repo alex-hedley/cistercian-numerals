@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cistercian Clock</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏰</text></svg>">
+
+    <style>
+        body {
+            font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;            text-align: center;
+            margin-top: 2em;
+        }
+        h1{font-weight: normal;}
+        .clockoutput {
+            display: inline-flex;
+            align-items: center;
+            font-size: 2em;
+            gap: 10px;
+            font-weight: bold;
+            border: 2px solid #ccc;
+            background-color: #eee;
+            border-radius: 10px;
+        }
+        footer {
+            font-size: .8em;
+            margin-top: 2em;
+            color: #666;
+        }
+        footer a {
+            color: #69c;
+            text-decoration: none;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+        <h1>Cistercian Clock</h1>
+        <div class="clockoutput">
+            <output id="hours"></output>
+            <div>:</div>
+            <output id="minutes"></output>
+            <div>:</div>
+            <output id="seconds"></output>
+        </div>
+        <footer>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, using <a href="https://en.wikipedia.org/wiki/Cistercian_numerals">Cistercian numerals</a> and <a href="https://github.com/codepo8/cistercian">Cistercian.js</a>.</footer>
+    <script src="toCistercian.js"></script>
+    <script>
+        config.canvas.width = 80;
+        let hourbox = document.querySelector('#hours');
+        let minutebox = document.querySelector('#minutes');
+        let secondbox = document.querySelector('#seconds');
+        function clock() {
+            let now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            document.querySelectorAll('.clockoutput output').forEach(output => {
+                output.innerHTML = '';
+            });
+            hourbox.innerHTML = toCistercian(hours);
+            minutebox.innerHTML = toCistercian(minutes);
+            secondbox.innerHTML = toCistercian(seconds);
+            setTimeout(clock, 1000);
+        }
+        clock();
+    </script>
+
+</body>
+</html>
